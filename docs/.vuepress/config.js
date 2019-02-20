@@ -4,15 +4,13 @@ module.exports = {
     themeConfig: {
         sidebar: 'auto'
     },
+    markdown: {
+        config: md => {
+            md.use(require("markdown-it-katex"));
+        }
+    },
     head: [
-        ['script', {type: "text/x-mathjax-config"}, `
-        MathJax.Hub.Config({
-            tex2jax: {
-            inlineMath: [ ['$','$'], ['\\(','\\)'] ],
-            processEscapes: true
-            }
-        });
-        `],
-        ['script', { src: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML'}]
+        ['link', {rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"}],
+        ['link', {rel: "stylesheet", href: "https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css"}]
     ]
 }
