@@ -1,6 +1,10 @@
-[問題リンク](https://beta.atcoder.jp/contests/arc060/tasks/arc060_b)
+---
+title: ABC044 D - 桁和 / Digit Sum
+lang: jp
+---
+# ABC044 D - 桁和 / Digit Sum
 
-**500点**
+[問題リンク](https://atcoder.jp/contests/abc044/tasks/arc060_b)
 
 ## 問題概要
 $n$, $s$ が入力される．
@@ -12,22 +16,13 @@ $f(b, n) = s$ となる $b$ が存在するか判定する．
 **関数 $f(b, n)$ の定義**
 
 - $n < b$ のとき $f(b, n) = n$
-- $n \geq b$ のとき $f(b, n) = f(b, floor(n/b)) + (n \bmod b)$
+- $n \geq b$ のとき $f(b, n) = f(b, floor(n/b)) + (n\%b)$
   - $floor(x)$は$x$を超えない最大の整数
 
 **制約**
 
 - $1 \leq n, s \leq 10^{11}$
 - $n, s$ ともに整数
-
-## 解説を見る前に考えた方法
-$b$ が増えると $f(b, n)$が単調増加するのでは??
-
-→ 二分探索でACかな??
-
-→ 単調増加じゃないやんけ
-
-→ わからん
 
 ## 解法
 
@@ -38,9 +33,9 @@ $b$ が増えると $f(b, n)$が単調増加するのでは??
 桁数は$n$が0になるまでに $b$ で割れる数とも言える．
 
 つまり $m$ 桁となる場合は
-\begin{equation}
-\displaystyle n = \Sigma_{i=0}^{m-1} a_ib^{i} \tag{1}
-\end{equation}
+
+$$ n = \sum_{i=0}^{m-1} a_ib^i (1)$$
+
 になる．
 
 ここで，桁数が2桁になるときを考える．
@@ -48,32 +43,29 @@ $b$ が増えると $f(b, n)$が単調増加するのでは??
 $n$ は $\sqrt{n}$ を越える値で1回までしか割ることが出来ない
 
 つまり $b > \sqrt{n}$ のとき
-\begin{equation}
- n = a_0 + a_1b \tag{2}
-\end{equation}
-\begin{equation}
- s = a_0 + a_1 \tag{3}
-\end{equation}
+
+$$ n = a_0 + a_1b $$
+
+$$ s = a_0 + a_1 $$
+
 となる．
 
 このとき，$a_1$ がどういった値になるかというと，
 
-$b > \sqrt{n}$ および 式 $(2)$ より
-\begin{equation}
-a_1 < \sqrt{n}
-\end{equation}
+$b > \sqrt{n}$ および上記の式より
+$$ a_1 < \sqrt{n} $$
 となる．
 
-また，式 $(2), (3)$ より
-\begin{equation}
-b = \frac{n - s}{a_1} + 1 \tag{4}
-\end{equation}
-$(4)$ より $a_1$ を決めると $b$ が一意に求まることが分かる．
+また，上記までの式より
+
+$$ b = \frac{n - s}{a_1} + 1 $$
+
+これにより $a_1$ を決めると $b$ が一意に求まることが分かる．
 
 ここまでで求めた方法で以下の2通りの方法で探索を行う．
 
 - $b \leq \sqrt{n}$ は単に $b$ で全探索する．$O(\sqrt{n})$
-- $b > \sqrt{n}$ では式 $(4)$ を使って $1 \leq a_1 < \sqrt{n}$ で全探索する．$O(\sqrt{n})$
+- $b > \sqrt{n}$ では求めた式を使って $1 \leq a_1 < \sqrt{n}$ で全探索する．$O(\sqrt{n})$
 
 上記で求めた $f(b, n) = s$となるもののうち最小の $b$ を出力する．
 

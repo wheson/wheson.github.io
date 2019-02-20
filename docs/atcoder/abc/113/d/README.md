@@ -2,10 +2,10 @@
 title: ABC113 D - Number of Amidakuji
 lang: jp
 ---
+# ABC113 D - Number of Amidakuji
 
 [問題リンク](https://beta.atcoder.jp/contests/abc113/tasks/abc113_d)
 
-**400点**
 ## 問題概要
 長さ $H+1$ cmの $W$ 本の縦棒がある．
 

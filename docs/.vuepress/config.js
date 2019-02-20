@@ -2,6 +2,11 @@ module.exports = {
     title: 'wheson精進日記',
     description: '競プロメモ集',
     themeConfig: {
+        nav: [
+            { text: "Home", link: "/" },
+            { text: "About", link: "/about/" },
+            { text: "Twitter", link: "https://twitter.com/wheson" },
+        ],
         sidebar: 'auto'
     },
     markdown: {
@@ -10,7 +15,6 @@ module.exports = {
         }
     },
     head: [
-        ['link', {rel: "stylesheet", href: "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"}],
-        ['link', {rel: "stylesheet", href: "https://cdn.jsdelivr.net/github-markdown-css/2.2.1/github-markdown.css"}]
+        ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.6.0/dist/katex.min.css' }]
     ]
 }

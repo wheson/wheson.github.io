@@ -225,7 +225,7 @@ lang: jp
 ### A
 ### B
 ### C
-### D - D - 桁和 / Digit Sum 500点
+### D - D - 桁和 / Digit Sum
 [問題リンク](https://atcoder.jp/contests/abc044/tasks/arc060_b)
 [詳細解説](044/d/)
 
@@ -574,7 +574,7 @@ $\sqrt{n}$ で場合分け
 ### A
 ### B
 ### C
-### D - Number of Amidakuji 400点
+### D - Number of Amidakuji
 [問題リンク](https://atcoder.jp/contests/abc113/tasks/abc113_d)
 [詳細解説](113/d/)
 
