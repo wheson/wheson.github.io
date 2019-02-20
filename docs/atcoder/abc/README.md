@@ -7,7 +7,7 @@ lang: jp
 ### A - 積雪深差
 [問題リンク](https://atcoder.jp/contests/abc001/tasks/abc001_1)
 
-四則演算
+- 四則演算
 ### B
 ### C
 ### D
@@ -229,7 +229,7 @@ lang: jp
 [問題リンク](https://atcoder.jp/contests/abc044/tasks/arc060_b)
 [詳細解説](044/d/)
 
-$\sqrt{n}$ で場合分け
+- $\sqrt{n}$ で場合分け
 ## 045
 ### A
 ### B
@@ -578,7 +578,7 @@ $\sqrt{n}$ で場合分け
 [問題リンク](https://atcoder.jp/contests/abc113/tasks/abc113_d)
 [詳細解説](113/d/)
 
-bitDP
+- bitDP
 ## 114
 ### A
 ### B
@@ -597,7 +597,11 @@ bitDP
 ## 117
 ### A
 ### B
-### C
+### C - Streamline
+[問題リンク](https://atcoder.jp/contests/abc117/tasks/abc117_c)
+
+- 数列
+- ソートして区間の差を求めて，それをまたソートして小さいものから$max(0, M-N)$個取る
 ### D
 ## 118
 ### A
