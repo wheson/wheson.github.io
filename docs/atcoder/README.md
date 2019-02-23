@@ -10,3 +10,5 @@ lang: jp
 ## [ARC](arc/)
 
 ## [AGC](agc/)
+
+## [その他](other/)

@@ -4,8 +4,7 @@ lang: jp
 ---
 
 ## 001
-### A - 積雪深差
-[問題リンク](https://atcoder.jp/contests/abc001/tasks/abc001_1)
+### [A - 積雪深差](https://atcoder.jp/contests/abc001/tasks/abc001_1)
 
 - 四則演算
 ### B
@@ -225,8 +224,7 @@ lang: jp
 ### A
 ### B
 ### C
-### D - D - 桁和 / Digit Sum
-[問題リンク](https://atcoder.jp/contests/abc044/tasks/arc060_b)
+### [D - 桁和 / Digit Sum](https://atcoder.jp/contests/abc044/tasks/arc060_b)
 [詳細解説](044/d/)
 
 - $\sqrt{n}$ で場合分け
@@ -574,8 +572,7 @@ lang: jp
 ### A
 ### B
 ### C
-### D - Number of Amidakuji
-[問題リンク](https://atcoder.jp/contests/abc113/tasks/abc113_d)
+### [D - Number of Amidakuji](https://atcoder.jp/contests/abc113/tasks/abc113_d)
 [詳細解説](113/d/)
 
 - bitDP
@@ -597,14 +594,21 @@ lang: jp
 ## 117
 ### A
 ### B
-### C - Streamline
-[問題リンク](https://atcoder.jp/contests/abc117/tasks/abc117_c)
+### [C - Streamline](https://atcoder.jp/contests/abc117/tasks/abc117_c)
 
 - 数列
 - ソートして区間の差を求めて，それをまたソートして小さいものから$max(0, M-N)$個取る
-### D
+### [D - Various Sushi](https://atcoder.jp/contests/abc116/tasks/abc116_d)
+
+- ソートして貪欲
+- ただし，種類ごとの最大値の集合と最大値を除いた集合を別にし，種類数を固定しながら答えを求める．
+
 ## 118
 ### A
 ### B
 ### C
-### D
+### [D - XXOR](https://atcoder.jp/contests/abc117/tasks/abc117_d)
+
+- XOR
+- 桁DP
+
