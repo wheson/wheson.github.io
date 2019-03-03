@@ -612,3 +612,37 @@ lang: jp
 - XOR
 - 桁DP
 
+## 119
+### [A - Still TBD](https://atcoder.jp/contests/abc119/tasks/abc119_a)
+
+- 条件分岐
+### [B - Digital Gifts](https://atcoder.jp/contests/abc119/tasks/abc119_b)
+
+- 条件分岐
+### [C - Synthetic Kadomatsu](https://atcoder.jp/contests/abc119/tasks/abc119_c)
+
+- bit全探索
+- A, B, CそれぞれでN本のうちのいくつかを使って作成するコストを事前に計算．
+### [D - Lazy Faith](https://atcoder.jp/contests/abc119/tasks/abc119_d)
+
+- 4通りの進み方を二分探索を使ってO(logN)で求める．
+
+## 120
+### [A - Favorite Sound](https://atcoder.jp/contests/abc120/tasks/abc120_a)
+
+- 四則演算
+
+### [B - K-th Common Divisor](https://atcoder.jp/contests/abc120/tasks/abc120_b)
+
+- 四則演算
+- 繰り返し文
+
+### [C - Unification](https://atcoder.jp/contests/abc120/tasks/abc120_c)
+
+- Stack
+- 今見てるものが1でtopが0，0でtopが1の時popしてans += 2する．それ以外のときは見ているものをpushする．
+
+### [D - Decayed Bridges](https://atcoder.jp/contests/abc120/tasks/abc120_d)
+
+- UnionFind
+- 後ろから順に連結していき，後ろから確定させていく．

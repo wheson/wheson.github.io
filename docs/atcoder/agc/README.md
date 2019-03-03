@@ -131,14 +131,20 @@ lang: jp
 ### F
 ## 019
 ### A
-### B
+### [B – Reverse and Compare](https://atcoder.jp/contests/agc019/tasks/agc019_b)
+
+- 文字列
+- s\[i]とs\[j\]が異なる文字の場合，別の文字列になるため，i+1以降にs\[i\]と異なるものが何個あるか分かれば良い．
 ### C
 ### D
 ### E
 ### F
 ## 020
 ### A
-### B
+### [B - Ice Rink Game](https://atcoder.jp/contests/agc020/tasks/agc020_b)
+
+- 数学
+- 後ろから順に最小値と最大値を確定させていく．
 ### C
 ### D
 ### E
