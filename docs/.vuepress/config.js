@@ -16,5 +16,6 @@ module.exports = {
     },
     head: [
         ['link', { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/katex@0.6.0/dist/katex.min.css' }]
-    ]
+    ],
+    ga: 'UA-136679024-1'
 }
