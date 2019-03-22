@@ -8,7 +8,7 @@ lang: jp
 - ~~[セグメント木](./data-structure/segment-tree/)~~
 
 ## グラフ
-- ~~[ダイクストラ法](./graph/dijkstra/)~~
+- [ダイクストラ法](./graph/dijkstra/)
 - ~~[ベルマンフォード法](./graph/bellman-ford/)~~
 - ~~[クラスカル法](./graph/kruskal/)~~
 - ~~[プリム法](./graph/prim/)~~

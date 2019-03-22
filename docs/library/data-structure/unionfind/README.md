@@ -60,6 +60,6 @@ class UnionFind
 };
 ```
 
-検証済: 
+## 検証済
 - [AOJ DSL_1_A 互いに素な集合](https://onlinejudge.u-aizu.ac.jp/status/users/wheson/submissions/1/DSL_1_A/judge/3421441/C++14)
 - [ABC120 D - Decayed Bridges](https://atcoder.jp/contests/abc120/submissions/4548338)
